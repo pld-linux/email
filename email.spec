@@ -8,7 +8,7 @@ Group:		Applications/Mail
 Source0:	http://email.cleancode.org/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	46aefdf1e8ef23b168712b3fa30631d2
 URL:		http://email.cleancode.org/
-BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Email is a program for the Unix environment that sends messages.
