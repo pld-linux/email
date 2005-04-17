@@ -1,12 +1,12 @@
 Summary:	Email can send email using remote SMTP
 Summary(pl):	Email potrafi wysy³aæ pocztê u¿ywaj±c zdalnych SMTP
 Name:		email
-Version:	2.3.2
+Version:	2.3.4
 Release:	1
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://email.cleancode.org/download/%{name}-%{version}.tar.bz2
-# Source0-md5:	40095c845797c583e79758a8f4e317e3
+# Source0-md5:	6ced0bebeb6897e9bb975bb02b66b5ae
 URL:		http://email.cleancode.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,8 +30,9 @@ pocztê u¿ywaj±c zdalnych serwerów SMTP.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir},%{_mandir}/man1}
-install email.conf $RPM_BUILD_ROOT%{_sysconfdir}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}/email,%{_mandir}/man1}
+
+install email.conf email.sig $RPM_BUILD_ROOT%{_sysconfdir}/email
 install src/email $RPM_BUILD_ROOT%{_bindir}
 install email.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
@@ -40,7 +41,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README RFC821 email.help email.address.template
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/email.conf
+%doc AUTHORS ChangeLog README RFC821 email.help email.address.template TODO
+%dir %{_sysconfdir}/email
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/email/email*
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
