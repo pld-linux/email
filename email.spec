@@ -1,12 +1,12 @@
 Summary:	Email can send email using remote SMTP
 Summary(pl):	Email potrafi wysy³aæ pocztê u¿ywaj±c zdalnych SMTP
 Name:		email
-Version:	2.3.4
+Version:	2.5.0
 Release:	1
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://email.cleancode.org/download/%{name}-%{version}.tar.bz2
-# Source0-md5:	6ced0bebeb6897e9bb975bb02b66b5ae
+# Source0-md5:	d6e5f5764e3655226b5a6f9a07622836
 URL:		http://email.cleancode.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
