@@ -2,26 +2,31 @@ Summary:	Email can send email using remote SMTP
 Summary(pl):	Email potrafi wysy³aæ pocztê u¿ywaj±c zdalnych SMTP
 Name:		email
 Version:	2.5.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://email.cleancode.org/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	d6e5f5764e3655226b5a6f9a07622836
+Patch0:		%{name}-conf.patch
 URL:		http://email.cleancode.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# configure fails to check strftime() otherwise
+%undefine	with_ccache
+
 %description
-Email is a program for the Unix environment that sends messages.
-It can send email from the command line using your SMTP server 
-instead of sendmail.
+Email is a program for the Unix environment that sends messages. It
+can send email from the command line using your SMTP server instead of
+sendmail.
 
 %description -l pl
-Email jest programem przeznaczonym do wysy³ania wiadomo¶ci w 
+Email jest programem przeznaczonym do wysy³ania wiadomo¶ci w
 ¶rodowisku UNIX. Jest uruchamiany z wiersza poleceñ. Potrafi wysy³aæ
 pocztê u¿ywaj±c zdalnych serwerów SMTP.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
