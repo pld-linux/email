@@ -1,0 +1,22 @@
+--- email-2.5.0/email.conf	2006-06-13 22:57:07.000000000 +0300
++++ email-2.5.0/email.conf	2006-06-17 16:20:10.306844976 +0300
+@@ -24,8 +24,8 @@
+ # then keep the format below and edit it to your email
+ # and name.
+ ############################################################
+-MY_NAME  = 'Your Real Name'
+-MY_EMAIL = 'yourlogin@example.com'
++#MY_NAME  = 'Your Real Name'
++#MY_EMAIL = 'yourlogin@example.com'
+ #REPLY_TO = ''
+ 
+ ############################################################
+@@ -41,7 +41,7 @@
+ # want address book functionality, just comment it out and
+ # use regular email addresses.
+ ############################################################
+-ADDRESS_BOOK = '&/email.address.template'
++#ADDRESS_BOOK = '&/email.address.template'
+ 
+ ############################################################
+ # If you would like to have a copy Of your final email saved
