@@ -1,5 +1,5 @@
 Summary:	Email can send email using remote SMTP
-Summary(pl):	Email potrafi wysy³aæ pocztê u¿ywaj±c zdalnych SMTP
+Summary(pl.UTF-8):   Email potrafi wysyÅ‚aÄ‡ pocztÄ™ uÅ¼ywajÄ…c zdalnych SMTP
 Name:		email
 Version:	2.5.0
 Release:	2
@@ -19,10 +19,10 @@ Email is a program for the Unix environment that sends messages. It
 can send email from the command line using your SMTP server instead of
 sendmail.
 
-%description -l pl
-Email jest programem przeznaczonym do wysy³ania wiadomo¶ci w
-¶rodowisku UNIX. Jest uruchamiany z wiersza poleceñ. Potrafi wysy³aæ
-pocztê u¿ywaj±c zdalnych serwerów SMTP.
+%description -l pl.UTF-8
+Email jest programem przeznaczonym do wysyÅ‚ania wiadomoÅ›ci w
+Å›rodowisku UNIX. Jest uruchamiany z wiersza poleceÅ„. Potrafi wysyÅ‚aÄ‡
+pocztÄ™ uÅ¼ywajÄ…c zdalnych serwerÃ³w SMTP.
 
 %prep
 %setup -q
