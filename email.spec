@@ -1,5 +1,5 @@
 Summary:	Email can send email using remote SMTP
-Summary(pl.UTF-8):   Email potrafi wysyłać pocztę używając zdalnych SMTP
+Summary(pl.UTF-8):	Email potrafi wysyłać pocztę używając zdalnych SMTP
 Name:		email
 Version:	2.5.0
 Release:	2
