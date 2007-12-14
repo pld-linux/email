@@ -5,7 +5,7 @@ Version:	2.5.0
 Release:	2
 License:	GPL
 Group:		Applications/Mail
-Source0:	http://email.cleancode.org/download/%{name}-%{version}.tar.bz2
+Source0:	http://www.cleancode.org/downloads/email/%{name}-%{version}.tar.bz2
 # Source0-md5:	d6e5f5764e3655226b5a6f9a07622836
 Patch0:		%{name}-conf.patch
 URL:		http://email.cleancode.org/
